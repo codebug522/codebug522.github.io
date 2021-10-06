@@ -21,32 +21,10 @@
     <loc>https://codebug522.github.io/quantumml/start/</loc>
     <lastmod>2021-10-05T11:42:08+02:00</lastmod>
   </url><url>
-    <loc>https://codebug522.github.io/posts/</loc>
-    <lastmod>2021-10-04T18:16:40+02:00</lastmod>
-  </url><url>
-    <loc>https://codebug522.github.io/posts/2021/10/quantum/</loc>
-    <lastmod>2021-10-04T18:16:40+02:00</lastmod>
-  </url><url>
-    <loc>https://codebug522.github.io/posts/2021/09/my-first-post/</loc>
-    <lastmod>2021-09-30T15:21:48+02:00</lastmod>
-  </url><url>
-    <loc>https://codebug522.github.io/tags/</loc>
-    <lastmod>2021-09-30T15:21:48+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://codebug522.github.io/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://codebug522.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://codebug522.github.io/tags/untagged/</loc>
-    <lastmod>2021-09-30T15:21:48+02:00</lastmod>
-  </url><url>
     <loc>https://codebug522.github.io/posts/2020/01/huuuuuuugoooooo/</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://codebug522.github.io/posts/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://codebug522.github.io/about/</loc>
@@ -74,6 +52,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://codebug522.github.io/series/"
+                />
+  </url><url>
+    <loc>https://codebug522.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://codebug522.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://codebug522.github.io/tags/"
                 />
   </url>
 </urlset>
