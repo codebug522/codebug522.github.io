@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Yangjie ">
+<meta name="description" content="0.why  好就一个字，我只说一次！！！！！！！
+1.1 安装iterm2  最近新入手了一块MacBook air，新的玩具到手，(tip: 这里自然会说一下我的债主，老马为我倾情贡献的分期免息。)自然免不了的就是各种各样的配置，所以这个系列我们就会从开始配置iterm2开始。 iterm2是自带的终端的一种替代品，还是非常不错的，对于怎么使用和使用特点后续我们再诉说一下衷肠。下载好了以后就是傻瓜式的安装，不知道为什么，在翻墙模式下，下载的速度是很慢的，没有测试在没有翻墙下的速度，感兴趣的可以自己试一下，没多大，但是下了好半天。后面的关于个性化的设置就看自己喜欢什么，在这一步我都是默认的，还没有做任何的修改，确实并没有眼前一亮的感觉。
+1.2 安装 oh-my-zsh  安装这个的时候可选的方式还是很多的:
+  github: https://github.com/robbyrussell/oh-my-zsh
+  比较官方的网址: ohmyz.sh,在网站上提供了两种安装方式:
+  weget安装: $ sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; curl安装: $ sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  当然，在你使用上述的weget等安装的时候，你会发现你需要安装weget，同理，安装weget的方式也有多种，我始终觉得安装这些东西的时候终端命令行的方式还是最简单质朴和高效的，所以可以选择使用homebrew来安装，因此你需要拥有和安装homebrew，基于这些需求，我们可以采取的最简单的方法就是直接安装mac的宇宙第一IDE，Xcode。这种模式还是简单的，他可以支持很多语言环境的开发，但是也许你以后也用不到这个软件(Apple store可以直接下载)。但是对于以后需要配置安装东西的时候需要开发者模式选项等的时候你就会发现拥有Xcode是很幸福的，你不用，但是它在默默的帮助你。但是在安装brew的时候发现原先的GitHub的gist是访问不了了。解决的方法也是很多，你可以换成其他的镜像，有大神有提供脚本。也可以直接解析原网址https://raw.github.com,解析的方法是首先在IP查询网址https://site.ip138.com/raw.Githubusercontent.com/进行查询，直接输入raw.githubusercontent.com进行查询，然后就可以进行homebrew、wget和oh-my-zsh的安装。其实通过终端的方式进行安装方便的原因还是因为不需要我们进行多样式的UI操作，但是很多时候出现要翻墙的时候如果手头不方便的话，通过传统的方式安装和找到国内的镜像源还是会比较方便的。
+1.3 配置 oh-my-zsh  zsh已经有很多的主题供我们选择了，但是我还是非常推荐Dracula上面的主题，该开源的项目上包含了各种各样的主题，针对不同的开发、软件、IDE、编辑器等都有很好的用户体验，后续我们会配置vim/mvim，我们还是会使用这个上面的主题 首先下载主题
+$ git clone https://github.com/dracula/iterm.git  通过命令行的方式进行修改, 先对主题文件和zsh进行连接，
+$ ln -s $DRACULA_THEME/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-them  打开配置文件，
+$ vi ~/.zshrc  修改主题为Dracula。(tip:值得注意的是等号之间没有空格)
+ZSH_THEME=&amp;#34;dracula&amp;#34;  另一种修改主题的方式也有，官网上面也说的很明确。" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://codebug522.github.io/posts/2020/11/iterm2/" />
+
+
+    <title>
+        
+            Iterm2 :: Life is Bug, Then debug  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://codebug522.github.io/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://codebug522.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://codebug522.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://codebug522.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://codebug522.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://codebug522.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://codebug522.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+<meta itemprop="name" content="Iterm2">
+<meta itemprop="description" content="0.why  好就一个字，我只说一次！！！！！！！
+1.1 安装iterm2  最近新入手了一块MacBook air，新的玩具到手，(tip: 这里自然会说一下我的债主，老马为我倾情贡献的分期免息。)自然免不了的就是各种各样的配置，所以这个系列我们就会从开始配置iterm2开始。 iterm2是自带的终端的一种替代品，还是非常不错的，对于怎么使用和使用特点后续我们再诉说一下衷肠。下载好了以后就是傻瓜式的安装，不知道为什么，在翻墙模式下，下载的速度是很慢的，没有测试在没有翻墙下的速度，感兴趣的可以自己试一下，没多大，但是下了好半天。后面的关于个性化的设置就看自己喜欢什么，在这一步我都是默认的，还没有做任何的修改，确实并没有眼前一亮的感觉。
+1.2 安装 oh-my-zsh  安装这个的时候可选的方式还是很多的:
+  github: https://github.com/robbyrussell/oh-my-zsh
+  比较官方的网址: ohmyz.sh,在网站上提供了两种安装方式:
+  weget安装: $ sh -c &#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&#34; curl安装: $ sh -c &#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;  当然，在你使用上述的weget等安装的时候，你会发现你需要安装weget，同理，安装weget的方式也有多种，我始终觉得安装这些东西的时候终端命令行的方式还是最简单质朴和高效的，所以可以选择使用homebrew来安装，因此你需要拥有和安装homebrew，基于这些需求，我们可以采取的最简单的方法就是直接安装mac的宇宙第一IDE，Xcode。这种模式还是简单的，他可以支持很多语言环境的开发，但是也许你以后也用不到这个软件(Apple store可以直接下载)。但是对于以后需要配置安装东西的时候需要开发者模式选项等的时候你就会发现拥有Xcode是很幸福的，你不用，但是它在默默的帮助你。但是在安装brew的时候发现原先的GitHub的gist是访问不了了。解决的方法也是很多，你可以换成其他的镜像，有大神有提供脚本。也可以直接解析原网址https://raw.github.com,解析的方法是首先在IP查询网址https://site.ip138.com/raw.Githubusercontent.com/进行查询，直接输入raw.githubusercontent.com进行查询，然后就可以进行homebrew、wget和oh-my-zsh的安装。其实通过终端的方式进行安装方便的原因还是因为不需要我们进行多样式的UI操作，但是很多时候出现要翻墙的时候如果手头不方便的话，通过传统的方式安装和找到国内的镜像源还是会比较方便的。
+1.3 配置 oh-my-zsh  zsh已经有很多的主题供我们选择了，但是我还是非常推荐Dracula上面的主题，该开源的项目上包含了各种各样的主题，针对不同的开发、软件、IDE、编辑器等都有很好的用户体验，后续我们会配置vim/mvim，我们还是会使用这个上面的主题 首先下载主题
+$ git clone https://github.com/dracula/iterm.git  通过命令行的方式进行修改, 先对主题文件和zsh进行连接，
+$ ln -s $DRACULA_THEME/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-them  打开配置文件，
+$ vi ~/.zshrc  修改主题为Dracula。(tip:值得注意的是等号之间没有空格)
+ZSH_THEME=&#34;dracula&#34;  另一种修改主题的方式也有，官网上面也说的很明确。"><meta itemprop="datePublished" content="2020-11-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-07T00:00:00+00:00" />
+<meta itemprop="wordCount" content="90"><meta itemprop="image" content="https://codebug522.github.io/"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://codebug522.github.io/"/>
+
+<meta name="twitter:title" content="Iterm2"/>
+<meta name="twitter:description" content="0.why  好就一个字，我只说一次！！！！！！！
+1.1 安装iterm2  最近新入手了一块MacBook air，新的玩具到手，(tip: 这里自然会说一下我的债主，老马为我倾情贡献的分期免息。)自然免不了的就是各种各样的配置，所以这个系列我们就会从开始配置iterm2开始。 iterm2是自带的终端的一种替代品，还是非常不错的，对于怎么使用和使用特点后续我们再诉说一下衷肠。下载好了以后就是傻瓜式的安装，不知道为什么，在翻墙模式下，下载的速度是很慢的，没有测试在没有翻墙下的速度，感兴趣的可以自己试一下，没多大，但是下了好半天。后面的关于个性化的设置就看自己喜欢什么，在这一步我都是默认的，还没有做任何的修改，确实并没有眼前一亮的感觉。
+1.2 安装 oh-my-zsh  安装这个的时候可选的方式还是很多的:
+  github: https://github.com/robbyrussell/oh-my-zsh
+  比较官方的网址: ohmyz.sh,在网站上提供了两种安装方式:
+  weget安装: $ sh -c &#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&#34; curl安装: $ sh -c &#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;  当然，在你使用上述的weget等安装的时候，你会发现你需要安装weget，同理，安装weget的方式也有多种，我始终觉得安装这些东西的时候终端命令行的方式还是最简单质朴和高效的，所以可以选择使用homebrew来安装，因此你需要拥有和安装homebrew，基于这些需求，我们可以采取的最简单的方法就是直接安装mac的宇宙第一IDE，Xcode。这种模式还是简单的，他可以支持很多语言环境的开发，但是也许你以后也用不到这个软件(Apple store可以直接下载)。但是对于以后需要配置安装东西的时候需要开发者模式选项等的时候你就会发现拥有Xcode是很幸福的，你不用，但是它在默默的帮助你。但是在安装brew的时候发现原先的GitHub的gist是访问不了了。解决的方法也是很多，你可以换成其他的镜像，有大神有提供脚本。也可以直接解析原网址https://raw.github.com,解析的方法是首先在IP查询网址https://site.ip138.com/raw.Githubusercontent.com/进行查询，直接输入raw.githubusercontent.com进行查询，然后就可以进行homebrew、wget和oh-my-zsh的安装。其实通过终端的方式进行安装方便的原因还是因为不需要我们进行多样式的UI操作，但是很多时候出现要翻墙的时候如果手头不方便的话，通过传统的方式安装和找到国内的镜像源还是会比较方便的。
+1.3 配置 oh-my-zsh  zsh已经有很多的主题供我们选择了，但是我还是非常推荐Dracula上面的主题，该开源的项目上包含了各种各样的主题，针对不同的开发、软件、IDE、编辑器等都有很好的用户体验，后续我们会配置vim/mvim，我们还是会使用这个上面的主题 首先下载主题
+$ git clone https://github.com/dracula/iterm.git  通过命令行的方式进行修改, 先对主题文件和zsh进行连接，
+$ ln -s $DRACULA_THEME/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-them  打开配置文件，
+$ vi ~/.zshrc  修改主题为Dracula。(tip:值得注意的是等号之间没有空格)
+ZSH_THEME=&#34;dracula&#34;  另一种修改主题的方式也有，官网上面也说的很明确。"/>
+
+
+
+
+    <meta property="og:title" content="Iterm2" />
+<meta property="og:description" content="0.why  好就一个字，我只说一次！！！！！！！
+1.1 安装iterm2  最近新入手了一块MacBook air，新的玩具到手，(tip: 这里自然会说一下我的债主，老马为我倾情贡献的分期免息。)自然免不了的就是各种各样的配置，所以这个系列我们就会从开始配置iterm2开始。 iterm2是自带的终端的一种替代品，还是非常不错的，对于怎么使用和使用特点后续我们再诉说一下衷肠。下载好了以后就是傻瓜式的安装，不知道为什么，在翻墙模式下，下载的速度是很慢的，没有测试在没有翻墙下的速度，感兴趣的可以自己试一下，没多大，但是下了好半天。后面的关于个性化的设置就看自己喜欢什么，在这一步我都是默认的，还没有做任何的修改，确实并没有眼前一亮的感觉。
+1.2 安装 oh-my-zsh  安装这个的时候可选的方式还是很多的:
+  github: https://github.com/robbyrussell/oh-my-zsh
+  比较官方的网址: ohmyz.sh,在网站上提供了两种安装方式:
+  weget安装: $ sh -c &#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&#34; curl安装: $ sh -c &#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;  当然，在你使用上述的weget等安装的时候，你会发现你需要安装weget，同理，安装weget的方式也有多种，我始终觉得安装这些东西的时候终端命令行的方式还是最简单质朴和高效的，所以可以选择使用homebrew来安装，因此你需要拥有和安装homebrew，基于这些需求，我们可以采取的最简单的方法就是直接安装mac的宇宙第一IDE，Xcode。这种模式还是简单的，他可以支持很多语言环境的开发，但是也许你以后也用不到这个软件(Apple store可以直接下载)。但是对于以后需要配置安装东西的时候需要开发者模式选项等的时候你就会发现拥有Xcode是很幸福的，你不用，但是它在默默的帮助你。但是在安装brew的时候发现原先的GitHub的gist是访问不了了。解决的方法也是很多，你可以换成其他的镜像，有大神有提供脚本。也可以直接解析原网址https://raw.github.com,解析的方法是首先在IP查询网址https://site.ip138.com/raw.Githubusercontent.com/进行查询，直接输入raw.githubusercontent.com进行查询，然后就可以进行homebrew、wget和oh-my-zsh的安装。其实通过终端的方式进行安装方便的原因还是因为不需要我们进行多样式的UI操作，但是很多时候出现要翻墙的时候如果手头不方便的话，通过传统的方式安装和找到国内的镜像源还是会比较方便的。
+1.3 配置 oh-my-zsh  zsh已经有很多的主题供我们选择了，但是我还是非常推荐Dracula上面的主题，该开源的项目上包含了各种各样的主题，针对不同的开发、软件、IDE、编辑器等都有很好的用户体验，后续我们会配置vim/mvim，我们还是会使用这个上面的主题 首先下载主题
+$ git clone https://github.com/dracula/iterm.git  通过命令行的方式进行修改, 先对主题文件和zsh进行连接，
+$ ln -s $DRACULA_THEME/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-them  打开配置文件，
+$ vi ~/.zshrc  修改主题为Dracula。(tip:值得注意的是等号之间没有空格)
+ZSH_THEME=&#34;dracula&#34;  另一种修改主题的方式也有，官网上面也说的很明确。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://codebug522.github.io/posts/2020/11/iterm2/" /><meta property="og:image" content="https://codebug522.github.io/"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-07T00:00:00+00:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-11-07 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://codebug522.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ Qubits &amp; Bits</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://codebug522.github.io/about/">About</a></li><li><a href="https://codebug522.github.io/posts/">Blogs</a></li><li><a href="https://codebug522.github.io/leetcode/">Leetcode</a></li><li><a href="https://codebug522.github.io/quantumml/">QuantumML</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://codebug522.github.io/posts/2020/11/iterm2/">Iterm2</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <h4 id="0why">0.why</h4>
+<p>  好就一个字，我只说一次！！！！！！！</p>
+<h4 id="11-安装iterm2">1.1 安装iterm2</h4>
+<p>  最近新入手了一块MacBook air，新的玩具到手，(tip: 这里自然会说一下我的债主，老马为我倾情贡献的分期免息。)自然免不了的就是各种各样的配置，所以这个系列我们就会从开始配置iterm2开始。
+  <a href="www.iterm2.com">iterm2</a>是自带的终端的一种替代品，还是非常不错的，对于怎么使用和使用特点后续我们再诉说一下衷肠。下载好了以后就是傻瓜式的安装，不知道为什么，在翻墙模式下，下载的速度是很慢的，没有测试在没有翻墙下的速度，感兴趣的可以自己试一下，没多大，但是下了好半天。后面的关于个性化的设置就看自己喜欢什么，在这一步我都是默认的，还没有做任何的修改，确实并没有眼前一亮的感觉。</p>
+<h3 id="12-安装-oh-my-zsh">1.2 安装 oh-my-zsh</h3>
+<p>  安装这个的时候可选的方式还是很多的:</p>
+<ul>
+<li>
+<p>github:
+<a href="https://github.com/robbyrussell/oh-my-zsh">https://github.com/robbyrussell/oh-my-zsh</a></p>
+</li>
+<li>
+<p>比较官方的网址: <a href="https://ohmyz.sh">ohmyz.sh</a>,在网站上提供了两种安装方式:</p>
+</li>
+</ul>
+<h5 id="emsp-weget安装">  weget安装:</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  $ sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><h5 id="emsp-curl安装">  curl安装:</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  $ sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>  当然，在你使用上述的weget等安装的时候，你会发现你需要安装weget，同理，安装weget的方式也有多种，我始终觉得安装这些东西的时候终端命令行的方式还是最简单质朴和高效的，所以可以选择使用homebrew来安装，因此你需要拥有和安装homebrew，基于这些需求，我们可以采取的最简单的方法就是直接安装mac的宇宙第一IDE，<a href="https://en.wikipedia.org/wiki/Xcode">Xcode</a>。这种模式还是简单的，他可以支持很多语言环境的开发，但是也许你以后也用不到这个软件(Apple store可以直接下载)。但是对于以后需要配置安装东西的时候需要开发者模式选项等的时候你就会发现拥有Xcode是很幸福的，你不用，但是它在默默的帮助你。但是在安装brew的时候发现原先的GitHub的gist是访问不了了。解决的方法也是很多，你可以换成其他的镜像，有大神有提供<a href="https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh">脚本</a>。也可以直接解析原网址<a href="https://raw.github.com%5D">https://raw.github.com</a>,解析的方法是首先在IP查询网址<a href="https://site.ip138.com/raw.Githubusercontent.com/%5D">https://site.ip138.com/raw.Githubusercontent.com/</a>进行查询，直接输入raw.githubusercontent.com进行查询，然后就可以进行homebrew、wget和oh-my-zsh的安装。其实通过终端的方式进行安装方便的原因还是因为不需要我们进行多样式的UI操作，但是很多时候出现要翻墙的时候如果手头不方便的话，通过传统的方式安装和找到国内的镜像源还是会比较方便的。</p>
+<h3 id="13-配置-oh-my-zsh">1.3 配置 oh-my-zsh</h3>
+<p>  zsh已经有很多的主题供我们选择了，但是我还是非常推荐<a href="https://draculatheme.com/">Dracula</a>上面的主题，该开源的项目上包含了各种各样的主题，针对不同的开发、软件、IDE、编辑器等都有很好的用户体验，后续我们会配置vim/mvim，我们还是会使用这个上面的主题
+  首先下载主题</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ git clone https://github.com/dracula/iterm.git
+</code></pre></div><p>  通过命令行的方式进行修改,
+   先对主题文件和zsh进行连接，</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ln -s $DRACULA_THEME/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-them
+</code></pre></div><p>  打开配置文件，</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ vi ~/.zshrc
+</code></pre></div><p> 修改主题为Dracula。(tip:值得注意的是等号之间没有空格)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ZSH_THEME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dracula&#34;</span>
+</code></pre></div><p>  另一种修改主题的方式也有，官网上面也说的很明确。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">1.iTerm2 &gt; Preferences &gt; Profiles &gt; Colors Tab
+2.Open the Color Presets... drop-down in the bottom right corner
+3.Select Import... from the list
+4.Select the Dracula.itermcolors file
+5.Select the Dracula from Color Presets...
+</code></pre></div><p>  生活就是这么的巧合，也怪我不是mac的真爱粉，我没有真正的去了解关于开发布会的时间，因此我都不知道双十一的晚上是开发布会的，结果我刚配置完这一台电脑上的iterm2就除了新的，如果是没啥大的亮点的话我就真的算了，但是没想到的是，这次他打破了苹果生态，用上了姓“A”的架构，意思就是以后苹果手机上很多的应用都可以无缝连接到电脑上，这简直就是反向bug啊，除了这个也就算了，关键这个居然还续航时间长达十八个小时。果断选择了退货重新购买。下一次出关于vim等的配置可能还要等很久，因为现在大陆还没有开售………………</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        90 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-11-07 01:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://codebug522.github.io/">Yangjie</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://codebug522.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://codebug522.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

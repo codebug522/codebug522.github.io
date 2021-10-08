@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leetcodes on Life is Bug, Then debug</title>
+    <link>https://codebug522.github.io/leetcode/</link>
+    <description>Recent content in Leetcodes on Life is Bug, Then debug</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 08 Jun 2019 16:17:13 +0200</lastBuildDate><atom:link href="https://codebug522.github.io/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1st</title>
+      <link>https://codebug522.github.io/leetcode/1st/</link>
+      <pubDate>Sat, 08 Jun 2019 16:17:13 +0200</pubDate>
+      
+      <guid>https://codebug522.github.io/leetcode/1st/</guid>
+      <description>0. 写在前面  知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
+1.0 两数之和  给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
+1.1 解法一：暴力搜索  计算机永恒的神，暴力求解，来不及解释了，上代码！
+class Solution { public: vector&amp;lt;int&amp;gt; twoSum(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) { vector&amp;lt;int&amp;gt; res = {0,0}; for(int i=0,j=0;i&amp;lt;nums.size()-1;i++) for(j = i+1;j&amp;lt;nums.size();j++) { if(target == nums[i]+nums[j]) { res[0] = i; res[1] = j; break; } } return res; } };  简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
+1.2 解法二：哈希表  利用哈希表，最直观的就是时间复杂度变低了。
+class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: hashset={} for i in range(len(nums)): if hashset.</description>
+    </item>
+    
+  </channel>
+</rss>

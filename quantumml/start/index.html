@@ -80,7 +80,7 @@ code.has-jax {
 <meta itemprop="name" content="Start">
 <meta itemprop="description" content="0. &ldquo;0&rdquo; of All First of all, I want to know and study quantum information, quantum computing and quantum machine learning, so we won&rsquo;t pay too much attention to quantum mechanics. However, these three aspects of learning and research actually need the basic concepts of quantum physics, of course, these concepts are very easy to obtain learning materials. For the following content and the following chapters, I want to do some related and preliminary understanding of this direction."><meta itemprop="datePublished" content="2021-10-05T11:42:08+02:00" />
 <meta itemprop="dateModified" content="2021-10-05T11:42:08+02:00" />
-<meta itemprop="wordCount" content="466"><meta itemprop="image" content="https://codebug522.github.io/"/>
+<meta itemprop="wordCount" content="732"><meta itemprop="image" content="https://codebug522.github.io/"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://codebug522.github.io/"/>
@@ -197,12 +197,44 @@ code.has-jax {
 <h3 id="23-wave-and-particle-in-mathematics">2.3 Wave and Particle in mathematics</h3>
 <p>$$ v=\frac{E}{h}$$
 $$ \lambda = \frac{h}{p} $$</p>
-<p>The particle properties of matter are characterized by enerfy $E$ and momentum $p$, the characteristics of wave are expressed by frequency $\nu$ and wavelength $\lambda$, the two sets of quantities linked by Planck&rsquo;s constant $h$</p>
+<p>The particle properties of matter are characterized by enerfy $E$ and momentum $p$, the characteristics of wave are expressed by frequency $\nu$ and wavelength $\lambda$, the two sets of quantities linked by Planck&rsquo;s constant $h$.</p>
+<h2 id="3-no-cloning-theorem">3 No-cloning theorem</h2>
+<h3 id="31-introduction">3.1 Introduction</h3>
+<p>An important consequence of quantum physics is the <a href="wikipedia.org/wiki/Max_Planck">no-cloning theorem</a>, which states that it is impossible to construct a system that can copy any quantum bit exactly without interfering with the original one. The linear nature of quantum mechanics is the fundamental reason for this principle.</p>
+<p>The principle of non-cloning is the foundation of quantum informatics. Quantum information is transmitted in a channel and cannot be copied by a third party to steal information without causing interference with quantum information. This principle is therefore the cornerstone of quantum cryptography.</p>
+<h3 id="32-proof">3.2 Proof</h3>
+<p>Fro the proof of the No-cloning theorem, we can use proof by caontradiction(an indirect proof), which is a proof that establish the truth or the validity of a proposition,by showing that assuming the proposition to be false leads to a contraction.</p>
+<ul>
+<li>
+<ol>
+<li>We assume that there is a  system that can make a complete copy of any qubit.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>${|{\phi}\rangle}$ and ${|{\psi}\rangle}$ is two arbitary quantum state, We want to cpoy these two state to another state ${|\kappa\rangle}$,which is none businese with the previous qbits. We use a unitary operator $U$ to describe this process. The copy must meet the following properties.</li>
+</ol>
+</li>
+</ul>
+<p>$$U(|\phi\rangle\otimes|\kappa\rangle)=|\phi\rangle\otimes|\phi\rangle$$
+$$U(|\psi\rangle\otimes|\kappa\rangle)=|\psi\rangle\otimes|\psi\rangle$$
+Do the Dot product between $\langle{U}(\phi\otimes\kappa)|$ and $|U(\psi\otimes\kappa)\rangle$, we will get,
+$$\langle{U}\phi\otimes\kappa)|U(\psi\otimes\kappa)\rangle= \langle\phi\otimes\phi|\psi\otimes\psi \rangle  $$
+$$\langle{U}(\phi\otimes\kappa)|U(\psi\otimes\kappa)\rangle= \langle\phi\otimes\kappa|\psi\otimes\kappa\rangle  $$
+so the following equation will apear:
+$$\langle\phi\otimes\phi|\psi\otimes\psi\rangle=\langle\phi\otimes\kappa|\psi\otimes\kappa\rangle$$</p>
+<p>$$ \langle\phi|\psi\rangle\langle\phi|\psi\rangle = \langle\phi|\psi\rangle\langle\kappa|\kappa\rangle$$</p>
+<p>Because of $\langle\kappa|\kappa\rangle = 1$, for the equation hold,
+$$\langle\phi|\psi\rangle\langle\phi|\psi\rangle=\langle\phi|\psi\rangle$$</p>
+<p>The condition that should be met is
+$$\langle\phi|\psi\rangle=0$$
+or</p>
+<p>$$\langle\phi|\psi\rangle=1$$
+That means，$\phi$ and $\psi$ are orthogonal or equanl. It does not satisfy that $\phi$ and $\psi$ are arbitary quantum state.</p>
 <h3 id="reference">Reference</h3>
 <ul>
 <li>[1] <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.ectstar.eu%2Fwp-content%2Fuploads%2F2020%2F05%2FQuantum-Symmetry.jpg&amp;imgrefurl=https%3A%2F%2Fwww.ectstar.eu%2Fresearch%2Fquantum-information%2F&amp;tbnid=XWIRtQW69ZG9_M&amp;vet=12ahUKEwjj8u-A3rPzAhVKyRoKHWWiAwoQMygHegUIARCwAQ..i&amp;docid=EzfoaDtytqV3iM&amp;w=777&amp;h=518&amp;q=quantum&amp;ved=2ahUKEwjj8u-A3rPzAhVKyRoKHWWiAwoQMygHegUIARCwAQ" title="Figure 1">Fig.1 Quantum-Symmetry</a></li>
 <li>[2] <a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Frunwise.co%2Finnovation%2Fproduct-innovation%2Fproduct-design%2F5423.html&amp;psig=AOvVaw3gXfbsuyLYdlByHy3YipG9&amp;ust=1633612901280000&amp;source=images&amp;cd=vfe&amp;ved=0CAsQjRxqFwoTCOiCq7vwtfMCFQAAAAAdAAAAABAD">Fig.2 brain-storm</a></li>
-<li>[3]</li>
 </ul>
 
             </div>
