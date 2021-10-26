@@ -7,14 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 05 Oct 2021 11:42:08 +0200</lastBuildDate><atom:link href="https://codebug522.github.io/quantumml/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Oct 2021 11:17:29 +0200</lastBuildDate><atom:link href="https://codebug522.github.io/quantumml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A single-mode gift buying model based on quantum theory in parallel time and space</title>
+      <link>https://codebug522.github.io/quantumml/buying/</link>
+      <pubDate>Tue, 26 Oct 2021 11:17:29 +0200</pubDate>
+      
+      <guid>https://codebug522.github.io/quantumml/buying/</guid>
+      <description>\
+ .::::. .::::::::. ::::::::::: ..:::::::::::&amp;#39; &amp;#39;::::::::::::&amp;#39; .:::::::::: No f**king Guess!!!! JUST ASK!!!!! &amp;#39;::::::::::::::.. ..::::::::::::. ``:::::::::::::::: ::::``:::::::::&amp;#39; .:::. ::::&amp;#39; &amp;#39;:::::&amp;#39; .::::::::. .::::&amp;#39; :::: .:::::::&amp;#39;::::. .:::&amp;#39; ::::: .:::::::::&amp;#39; &amp;#39;:::::. .::&amp;#39; :::::.:::::::::&amp;#39; &amp;#39;:::::. .::&amp;#39; ::::::::::::::&amp;#39; ``::::. ...::: ::::::::::::&amp;#39; ``::. ```` &amp;#39;:. &amp;#39;:::::::::&amp;#39; ::::.. &amp;#39;.:::::&amp;#39; &amp;#39;:&amp;#39;````.</description>
+    </item>
+    
+    <item>
+      <title>BitsToQubits</title>
+      <link>https://codebug522.github.io/quantumml/bitstoqubits/</link>
+      <pubDate>Fri, 08 Oct 2021 09:55:44 +0200</pubDate>
+      
+      <guid>https://codebug522.github.io/quantumml/bitstoqubits/</guid>
+      <description>![my](/images/bitsandqubits.png)  --  
+Overview  From bits to Qubits  Dirac nation Density matrices Measurement Bloch Sphere   From Bits to Qubits Classical states for computation is either &amp;ldquo;0&amp;rdquo; or &amp;ldquo;1&amp;rdquo;. In quantum mechanics, a state can be in superposition, i.e. simutaneously be in &amp;ldquo;0&amp;rdquo; and &amp;ldquo;1&amp;rdquo;. Superposition allow us yyo perform calculations on many states at the same time.That means the Quantum algotithm with exponential spee up.</description>
+    </item>
+    
     <item>
       <title>Start</title>
       <link>https://codebug522.github.io/quantumml/start/</link>
       <pubDate>Tue, 05 Oct 2021 11:42:08 +0200</pubDate>
       
       <guid>https://codebug522.github.io/quantumml/start/</guid>
-      <description>0. &amp;ldquo;0&amp;rdquo; of All First of all, I want to know and study quantum information, quantum computing and quantum machine learning, so we won&amp;rsquo;t pay too much attention to quantum mechanics. However, these three aspects of learning and research actually need the basic concepts of quantum physics, of course, these concepts are very easy to obtain learning materials. For the following content and the following chapters, I want to do some related and preliminary understanding of this direction.</description>
+      <description>Quantum Machine Learning in feature Hibert spacesis a paper which I think is worth reading for knowing someting about the area.
+0. &amp;ldquo;0&amp;rdquo; of All First of all, I want to know and study quantum information, quantum computing and quantum machine learning, so we won&amp;rsquo;t pay too much attention to quantum mechanics. However, these three aspects of learning and research actually need the basic concepts of quantum physics, of course, these concepts are very easy to obtain learning materials.</description>
     </item>
     
   </channel>

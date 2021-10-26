@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Yangjie ">
+<meta name="description" content="![my](/images/bitsandqubits.png)  --  
+Overview  From bits to Qubits  Dirac nation Density matrices Measurement Bloch Sphere   From Bits to Qubits Classical states for computation is either &amp;ldquo;0&amp;rdquo; or &amp;ldquo;1&amp;rdquo;. In quantum mechanics, a state can be in superposition, i.e. simutaneously be in &amp;ldquo;0&amp;rdquo; and &amp;ldquo;1&amp;rdquo;. Superposition allow us yyo perform calculations on many states at the same time.That means the Quantum algotithm with exponential spee up." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://codebug522.github.io/quantumml/bitstoqubits/" />
+
+
+    <title>
+        
+            BitsToQubits :: Life is Bug, Then debug  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://codebug522.github.io/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://codebug522.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://codebug522.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://codebug522.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://codebug522.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://codebug522.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://codebug522.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+<meta itemprop="name" content="BitsToQubits">
+<meta itemprop="description" content="![my](/images/bitsandqubits.png)  --  
+Overview  From bits to Qubits  Dirac nation Density matrices Measurement Bloch Sphere   From Bits to Qubits Classical states for computation is either &ldquo;0&rdquo; or &ldquo;1&rdquo;. In quantum mechanics, a state can be in superposition, i.e. simutaneously be in &ldquo;0&rdquo; and &ldquo;1&rdquo;. Superposition allow us yyo perform calculations on many states at the same time.That means the Quantum algotithm with exponential spee up."><meta itemprop="datePublished" content="2021-10-08T09:55:44+02:00" />
+<meta itemprop="dateModified" content="2021-10-08T09:55:44+02:00" />
+<meta itemprop="wordCount" content="282"><meta itemprop="image" content="https://codebug522.github.io/"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://codebug522.github.io/"/>
+
+<meta name="twitter:title" content="BitsToQubits"/>
+<meta name="twitter:description" content="![my](/images/bitsandqubits.png)  --  
+Overview  From bits to Qubits  Dirac nation Density matrices Measurement Bloch Sphere   From Bits to Qubits Classical states for computation is either &ldquo;0&rdquo; or &ldquo;1&rdquo;. In quantum mechanics, a state can be in superposition, i.e. simutaneously be in &ldquo;0&rdquo; and &ldquo;1&rdquo;. Superposition allow us yyo perform calculations on many states at the same time.That means the Quantum algotithm with exponential spee up."/>
+
+
+
+
+    <meta property="og:title" content="BitsToQubits" />
+<meta property="og:description" content="![my](/images/bitsandqubits.png)  --  
+Overview  From bits to Qubits  Dirac nation Density matrices Measurement Bloch Sphere   From Bits to Qubits Classical states for computation is either &ldquo;0&rdquo; or &ldquo;1&rdquo;. In quantum mechanics, a state can be in superposition, i.e. simutaneously be in &ldquo;0&rdquo; and &ldquo;1&rdquo;. Superposition allow us yyo perform calculations on many states at the same time.That means the Quantum algotithm with exponential spee up." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://codebug522.github.io/quantumml/bitstoqubits/" /><meta property="og:image" content="https://codebug522.github.io/"/><meta property="article:section" content="quantumML" />
+<meta property="article:published_time" content="2021-10-08T09:55:44+02:00" />
+<meta property="article:modified_time" content="2021-10-08T09:55:44+02:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-10-08 09:55:44 &#43;0200 CEST" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://codebug522.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ Qubits &amp; Bits</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://codebug522.github.io/about/">About</a></li><li><a href="https://codebug522.github.io/posts/">Blogs</a></li><li><a href="https://codebug522.github.io/leetcode/">Leetcode</a></li><li><a href="https://codebug522.github.io/quantumml/">QuantumML</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://codebug522.github.io/quantumml/bitstoqubits/">BitsToQubits</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                
+
+<!--
+<center>
+![my](/images/bitsandqubits.png)
+</center>
+-->
+
+<p><center>
+<img src="https://codebug522.github.io/images/bitsandqubits.png"  width = 500 height = 300 alt="Hello Friend" position="center" style="border-radius: 5px;" ></p>
+
+<p></center></p>
+
+<h2 id="overview">Overview</h2>
+
+<ul>
+<li>From bits to Qubits
+
+<ul>
+<li>Dirac nation</li>
+<li>Density matrices</li>
+<li>Measurement</li>
+<li>Bloch Sphere</li>
+</ul></li>
+</ul>
+
+<h2 id="from-bits-to-qubits">From Bits to Qubits</h2>
+
+<p>Classical states for computation is either <font color=red>&ldquo;0&rdquo; or &ldquo;1&rdquo;</font>. In quantum mechanics, a state can be in superposition, i.e. simutaneously be in <font color=red>&ldquo;0&rdquo; and &ldquo;1&rdquo;</font>. Superposition allow us yyo perform calculations on many states at the same time.That means the Quantum algotithm with exponential spee up.
+But, once we measure the superstation state, It collapses into one of its state. It is not that easy to desigen quantum algorithm, but we use inferference effects.</p>
+
+<h3 id="dirac-notations-density-matrices">Dirac notations &amp; density matrices</h3>
+
+<p>The direct notations and density matrices are used to describe the quantum states.
+Let $a,b \in \mathbb{C}^20 $ (2-dimensioal vector with complex numbers).
+And then we define:</p>
+
+<p><font color=green>ket: </font>$|a\rangle=\binom{a_0}{a_1}$</p>
+
+<p><font color=green>bra: </font>${{\langle{b}|}={|b\rangle}^+={\binom{b_0}{b_1}}^+={{(b_0^*}&ensp;{b_1^*)}}} $</p>
+
+<p><font color=green>bra-ket: </font>$\langle{b}|{a}\rangle=a _0b^*+a_1b_1^*$=${\langle{b}|{a}|\rangle}^* \in \mathbb{C}^2$</p>
+
+<p><font color=green>ket-bra: </font>$|a\rangle\langle{b}|=\begin{pmatrix}a_0b_0^* &amp;a_0b_1^* \\ a_1b_0^* &amp; a_1b_1^*\end{pmatrix}$</p>
+
+<p>From the description of the quantum states, we define the pure state <font color=green>$|0\rangle=\binom{1}{0}$</font> and <font color=green>$|1\rangle=\binom{0}{1}$</font>
+which are orthogonal. That means we product $\langle{0}|{1}\rangle=0$.</p>
+
+<p>and we prduct $|0\rangle|\langle{0}| = (1&ensp; 0)\cdot\binom{1}{0}=\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix}$
+and $|1\rangle|\langle{1}| = (0&ensp; 1)\cdot\binom{0}{1}=\begin{pmatrix}0&amp;0\\0&amp;1\end{pmatrix}$</p>
+
+<p>In general any matrix $\rho=\begin{pmatrix}\rho_{00} &amp; \rho_{01}  \\ \rho_{10} &amp; \rho_{11}
+\end{pmatrix}=\rho_{00}\cdot|0\rangle|\langle{0}|+\rho_{01}\cdot|0\rangle|\langle{1}|+\rho_{10}\cdot|1\rangle|\langle{0}|+\rho_{11}\cdot|1\rangle|\langle{1}|$</p>
+
+<p>All quantum states in any superpostion can be describe by density matrces, i.e. normalized, positive hermitian operators $\rho$</p>
+
+<ul>
+<li>Normalization: $t_r(\rho)=1$</li>
+<li>Positive: $\rho\geq{0}$, $\langle\psi|\rho|\psi\rangle\geq0$
+($|\psi\rangle$ all eigen values $\geq{0}$)</li>
+<li>Hermitian: $\rho=\rho^+$</li>
+</ul>
+
+<p>All quantum states are normalized $\langle\phi|\phi\rangle=1$</p>
+
+<ul>
+<li>e.g. $|\phi\rangle=\frac{1}{\sqrt{2}}(|1\rangle+|0\rangle)$</li>
+</ul>
+
+<h3 id="measurement">Measurement</h3>
+
+<p>We chose orthogonal basis to describe and measure quantum state. During a measurement onto some basis$(|0\rangle, |1\langle)$, the state will collapse into either state $|0\rangle$ or $|1\rangle$</p>
+
+<p><font color=red>Born Rule</font></p>
+
+<p>$\rho=\big(\begin{smallmatrix}\rho_{00} &amp; \rho_{01}  \\ \rho_{10} &amp; \rho_{11}
+\end{smallmatrix}\big)=\rho_{00}\cdot$</p>
+
+<p>$\rho=\begin{smallmatrix}\rho_{00} &amp; \rho_{01}  \\ \rho_{10} &amp; \rho_{11}\end{smallmatrix}$</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><p><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.mouser.lu%2Fblog%2Fa-bit-about-connecting-qubits-quantum-computing&amp;psig=AOvVaw3d4Kai41hCqmm8gJfKoao8&amp;ust=1633766200705000&amp;source=images&amp;cd=vfe&amp;ved=0CAsQjRxqFwoTCJji0ceruvMCFQAAAAAdAAAAABAJ" target="_blank">qubit</a></p></li>
+
+<li><p><a href="https://qiskit.org/textbook-beta/summer-school/quantum-computing-and-quantum-learning-2021/" target="_blank">2021 Qiskit Global Summer School on Quantum Machine learning</a></p></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://codebug522.github.io/">Yangjie</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://codebug522.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://codebug522.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

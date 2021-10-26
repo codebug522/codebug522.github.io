@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Yangjie ">
-<meta name="description" content="排序算法  记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
-1.排序算法  排序算法是《数据结构与算法》中最基本的算法之一。
- 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
+<meta name="description" content="排序算法 &amp;emsp; 记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
+1.排序算法 &amp;emsp; 排序算法是《数据结构与算法》中最基本的算法之一。
+&amp;emsp; 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
    排序算法 平均时间复杂度 空间复杂度 排序方式 稳定性     冒泡排序 ${O(n^2)}$ $O(1)$ 内部排序 稳定   选择排 $O(n^2)$ $O(1)$ 内部排序 不稳定   插入排序 $O(n^2)$ $O(1)$ 内部排序 稳定   希尔排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   归并排序 ${O(nlog^n)}$ $O(n)$ 外部排序 稳定   快速排序 ${O(nlog^n)}$ $O(log^n)$ 内部排序 不稳定   堆排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   计数排序 $O(n&#43;k)$ $O(k)$ 外部排序 稳定   桶排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定   基数排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定    2." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
@@ -81,29 +81,29 @@ code.has-jax {
 
 
 <meta itemprop="name" content="Sort">
-<meta itemprop="description" content="排序算法  记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
-1.排序算法  排序算法是《数据结构与算法》中最基本的算法之一。
- 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
+<meta itemprop="description" content="排序算法 &emsp; 记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
+1.排序算法 &emsp; 排序算法是《数据结构与算法》中最基本的算法之一。
+&emsp; 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
    排序算法 平均时间复杂度 空间复杂度 排序方式 稳定性     冒泡排序 ${O(n^2)}$ $O(1)$ 内部排序 稳定   选择排 $O(n^2)$ $O(1)$ 内部排序 不稳定   插入排序 $O(n^2)$ $O(1)$ 内部排序 稳定   希尔排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   归并排序 ${O(nlog^n)}$ $O(n)$ 外部排序 稳定   快速排序 ${O(nlog^n)}$ $O(log^n)$ 内部排序 不稳定   堆排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   计数排序 $O(n&#43;k)$ $O(k)$ 外部排序 稳定   桶排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定   基数排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定    2."><meta itemprop="datePublished" content="2018-10-04T16:09:58+02:00" />
 <meta itemprop="dateModified" content="2018-10-04T16:09:58+02:00" />
-<meta itemprop="wordCount" content="251"><meta itemprop="image" content="https://codebug522.github.io/"/>
+<meta itemprop="wordCount" content="255"><meta itemprop="image" content="https://codebug522.github.io/"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://codebug522.github.io/"/>
 
 <meta name="twitter:title" content="Sort"/>
-<meta name="twitter:description" content="排序算法  记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
-1.排序算法  排序算法是《数据结构与算法》中最基本的算法之一。
- 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
+<meta name="twitter:description" content="排序算法 &emsp; 记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
+1.排序算法 &emsp; 排序算法是《数据结构与算法》中最基本的算法之一。
+&emsp; 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
    排序算法 平均时间复杂度 空间复杂度 排序方式 稳定性     冒泡排序 ${O(n^2)}$ $O(1)$ 内部排序 稳定   选择排 $O(n^2)$ $O(1)$ 内部排序 不稳定   插入排序 $O(n^2)$ $O(1)$ 内部排序 稳定   希尔排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   归并排序 ${O(nlog^n)}$ $O(n)$ 外部排序 稳定   快速排序 ${O(nlog^n)}$ $O(log^n)$ 内部排序 不稳定   堆排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   计数排序 $O(n&#43;k)$ $O(k)$ 外部排序 稳定   桶排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定   基数排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定    2."/>
 
 
 
 
     <meta property="og:title" content="Sort" />
-<meta property="og:description" content="排序算法  记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
-1.排序算法  排序算法是《数据结构与算法》中最基本的算法之一。
- 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
+<meta property="og:description" content="排序算法 &emsp; 记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。
+1.排序算法 &emsp; 排序算法是《数据结构与算法》中最基本的算法之一。
+&emsp; 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。
    排序算法 平均时间复杂度 空间复杂度 排序方式 稳定性     冒泡排序 ${O(n^2)}$ $O(1)$ 内部排序 稳定   选择排 $O(n^2)$ $O(1)$ 内部排序 不稳定   插入排序 $O(n^2)$ $O(1)$ 内部排序 稳定   希尔排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   归并排序 ${O(nlog^n)}$ $O(n)$ 外部排序 稳定   快速排序 ${O(nlog^n)}$ $O(log^n)$ 内部排序 不稳定   堆排序 ${O(nlog^n)}$ $O(1)$ 内部排序 不稳定   计数排序 $O(n&#43;k)$ $O(k)$ 外部排序 稳定   桶排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定   基数排序 $O(n&#43;k)$ $O(n&#43;k)$ 外部排序 稳定    2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://codebug522.github.io/posts/2018/10/sort/" /><meta property="og:image" content="https://codebug522.github.io/"/><meta property="article:section" content="posts" />
@@ -198,96 +198,115 @@ code.has-jax {
       
 
       <div class="post-content">
-        <h2 id="排序算法">排序算法</h2>
-<p>  记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。</p>
-<h3 id="1排序算法">1.排序算法</h3>
-<p>  排序算法是《数据结构与算法》中最基本的算法之一。</p>
-<p>  排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。</p>
+        
+
+<h2 id="排序算法">排序算法</h2>
+
+<p>&emsp; 记录本身是为了自己查找，后面你们会发现，我写的东西大多数都是为了方便自己查找，而非真正的“你在教我做事”的意思，好记性不如烂笔头，所以我记录是为了方便自己，如果哪一天方便了你们我也是会很开心的。</p>
+
+<h3 id="1-排序算法">1.排序算法</h3>
+
+<p>&emsp; 排序算法是《数据结构与算法》中最基本的算法之一。</p>
+
+<p>&emsp; 排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因为排序的数据量会很大，一次不能容纳全部的排序记录，在排序过程中需要访问外部存储（对于存储的概念并没有很深刻的理解，毕竟计算机体系结构这样的书都被我用来垫显示器了，真的是非常汗颜）。常见的外部排序算法又：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等！这里基于Google和各类大神的结合我进行了简单的概括。</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:center">排序算法</th>
-<th style="text-align:center">平均时间复杂度</th>
-<th style="text-align:center">空间复杂度</th>
-<th style="text-align:center">排序方式</th>
-<th style="text-align:center">稳定性</th>
+<th align="center">排序算法</th>
+<th align="center">平均时间复杂度</th>
+<th align="center">空间复杂度</th>
+<th align="center">排序方式</th>
+<th align="center">稳定性</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:center">冒泡排序</td>
-<td style="text-align:center"><code>${O(n^2)}$</code></td>
-<td style="text-align:center"><code>$O(1)$</code></td>
-<td style="text-align:center">内部排序</td>
-<td style="text-align:center">稳定</td>
+<td align="center">冒泡排序</td>
+<td align="center"><code>${O(n^2)}$</code></td>
+<td align="center"><code>$O(1)$</code></td>
+<td align="center">内部排序</td>
+<td align="center">稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">选择排</td>
-<td style="text-align:center"><code>$O(n^2)$</code></td>
-<td style="text-align:center"><code>$O(1)$</code></td>
-<td style="text-align:center">内部排序</td>
-<td style="text-align:center">不稳定</td>
+<td align="center">选择排</td>
+<td align="center"><code>$O(n^2)$</code></td>
+<td align="center"><code>$O(1)$</code></td>
+<td align="center">内部排序</td>
+<td align="center">不稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">插入排序</td>
-<td style="text-align:center"><code>$O(n^2)$</code></td>
-<td style="text-align:center"><code>$O(1)$</code></td>
-<td style="text-align:center">内部排序</td>
-<td style="text-align:center">稳定</td>
+<td align="center">插入排序</td>
+<td align="center"><code>$O(n^2)$</code></td>
+<td align="center"><code>$O(1)$</code></td>
+<td align="center">内部排序</td>
+<td align="center">稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">希尔排序</td>
-<td style="text-align:center"><code>${O(nlog^n)}$</code></td>
-<td style="text-align:center"><code>$O(1)$</code></td>
-<td style="text-align:center">内部排序</td>
-<td style="text-align:center">不稳定</td>
+<td align="center">希尔排序</td>
+<td align="center"><code>${O(nlog^n)}$</code></td>
+<td align="center"><code>$O(1)$</code></td>
+<td align="center">内部排序</td>
+<td align="center">不稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">归并排序</td>
-<td style="text-align:center"><code>${O(nlog^n)}$</code></td>
-<td style="text-align:center"><code>$O(n)$</code></td>
-<td style="text-align:center">外部排序</td>
-<td style="text-align:center">稳定</td>
+<td align="center">归并排序</td>
+<td align="center"><code>${O(nlog^n)}$</code></td>
+<td align="center"><code>$O(n)$</code></td>
+<td align="center">外部排序</td>
+<td align="center">稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">快速排序</td>
-<td style="text-align:center"><code>${O(nlog^n)}$</code></td>
-<td style="text-align:center"><code>$O(log^n)$</code></td>
-<td style="text-align:center">内部排序</td>
-<td style="text-align:center">不稳定</td>
+<td align="center">快速排序</td>
+<td align="center"><code>${O(nlog^n)}$</code></td>
+<td align="center"><code>$O(log^n)$</code></td>
+<td align="center">内部排序</td>
+<td align="center">不稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">堆排序</td>
-<td style="text-align:center"><code>${O(nlog^n)}$</code></td>
-<td style="text-align:center"><code>$O(1)$</code></td>
-<td style="text-align:center">内部排序</td>
-<td style="text-align:center">不稳定</td>
+<td align="center">堆排序</td>
+<td align="center"><code>${O(nlog^n)}$</code></td>
+<td align="center"><code>$O(1)$</code></td>
+<td align="center">内部排序</td>
+<td align="center">不稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">计数排序</td>
-<td style="text-align:center"><code>$O(n+k)$</code></td>
-<td style="text-align:center"><code>$O(k)$</code></td>
-<td style="text-align:center">外部排序</td>
-<td style="text-align:center">稳定</td>
+<td align="center">计数排序</td>
+<td align="center"><code>$O(n+k)$</code></td>
+<td align="center"><code>$O(k)$</code></td>
+<td align="center">外部排序</td>
+<td align="center">稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">桶排序</td>
-<td style="text-align:center"><code>$O(n+k)$</code></td>
-<td style="text-align:center"><code>$O(n+k)$</code></td>
-<td style="text-align:center">外部排序</td>
-<td style="text-align:center">稳定</td>
+<td align="center">桶排序</td>
+<td align="center"><code>$O(n+k)$</code></td>
+<td align="center"><code>$O(n+k)$</code></td>
+<td align="center">外部排序</td>
+<td align="center">稳定</td>
 </tr>
+
 <tr>
-<td style="text-align:center">基数排序</td>
-<td style="text-align:center"><code>$O(n+k)$</code></td>
-<td style="text-align:center"><code>$O(n+k)$</code></td>
-<td style="text-align:center">外部排序</td>
-<td style="text-align:center">稳定</td>
+<td align="center">基数排序</td>
+<td align="center"><code>$O(n+k)$</code></td>
+<td align="center"><code>$O(n+k)$</code></td>
+<td align="center">外部排序</td>
+<td align="center">稳定</td>
 </tr>
 </tbody>
 </table>
-<h3 id="2几种排序的代码解释">2.几种排序的代码解释</h3>
-<h4 id="21冒泡排序">2.1冒泡排序</h4>
+
+<h3 id="2-几种排序的代码解释">2.几种排序的代码解释</h3>
+
+<h4 id="2-1冒泡排序">2.1冒泡排序</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
 number <span style="color:#f92672">=</span> []
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>):
@@ -306,8 +325,8 @@ print(number)
     <span style="color:#66d9ef">return</span> arr
 
 bubbleSort(number)
-print(number)
-</code></pre></div><h4 id="21插入排序">2.1插入排序</h4>
+print(number)</code></pre></div>
+<h4 id="2-1插入排序">2.1插入排序</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
 
 number <span style="color:#f92672">=</span> []
@@ -328,8 +347,8 @@ print(<span style="color:#e6db74">&#34;排序前的数据&#34;</span>,number)
     <span style="color:#66d9ef">return</span> arr
 
 insertionSort(number)
-print(<span style="color:#e6db74">&#34;排序后的数据&#34;</span>,number)
-</code></pre></div><h4 id="21归并排序">2.1归并排序</h4>
+print(<span style="color:#e6db74">&#34;排序后的数据&#34;</span>,number)</code></pre></div>
+<h4 id="2-1归并排序">2.1归并排序</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random 
 <span style="color:#f92672">import</span> math
 
@@ -359,8 +378,8 @@ print(<span style="color:#e6db74">&#34;排序前的数据:&#34;</span>,number)
          result<span style="color:#f92672">.</span>append(right<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>))
     <span style="color:#66d9ef">return</span> result
 <span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    print(<span style="color:#e6db74">&#34;排序后的数据: &#34;</span>,mergeSort(number))
-</code></pre></div><h4 id="21选择排序">2.1选择排序</h4>
+    print(<span style="color:#e6db74">&#34;排序后的数据: &#34;</span>,mergeSort(number))</code></pre></div>
+<h4 id="2-1选择排序">2.1选择排序</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random 
 number <span style="color:#f92672">=</span> []
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>):
@@ -380,8 +399,8 @@ print(<span style="color:#e6db74">&#34;排序前的数据:&#34;</span>,number)
     <span style="color:#66d9ef">return</span> arr
 
 SelectionSort(number)
-print(<span style="color:#e6db74">&#34;排序后的数据:&#34;</span>,number)
-</code></pre></div><p>  其实也就是为了方便自己以后查看，很多都是参考大神们的书写。codebug是个过程，debugbug才是目的！</p>
+print(<span style="color:#e6db74">&#34;排序后的数据:&#34;</span>,number)</code></pre></div>
+<p>&emsp; 其实也就是为了方便自己以后查看，很多都是参考大神们的书写。codebug是个过程，debugbug才是目的！</p>
 
       </div>
     </article>
@@ -400,7 +419,7 @@ print(<span style="color:#e6db74">&#34;排序后的数据:&#34;</span>,number)
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        251 Words
+        255 Words
       </p>
 
       <p>

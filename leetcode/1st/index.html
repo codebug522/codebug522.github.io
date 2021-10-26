@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Yangjie ">
-<meta name="description" content="0. 写在前面  知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
-1.0 两数之和  给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
-1.1 解法一：暴力搜索  计算机永恒的神，暴力求解，来不及解释了，上代码！
-class Solution { public: vector&amp;lt;int&amp;gt; twoSum(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) { vector&amp;lt;int&amp;gt; res = {0,0}; for(int i=0,j=0;i&amp;lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&amp;lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } };  简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
-1.2 解法二：哈希表  利用哈希表，最直观的就是时间复杂度变低了。
+<meta name="description" content="0. 写在前面 &amp;emsp;知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
+1.0 两数之和 &amp;emsp; 给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
+1.1 解法一：暴力搜索 &amp;emsp; 计算机永恒的神，暴力求解，来不及解释了，上代码！
+class Solution { public: vector&amp;lt;int&amp;gt; twoSum(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) { vector&amp;lt;int&amp;gt; res = {0,0}; for(int i=0,j=0;i&amp;lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&amp;lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } }; &amp;emsp; 简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
+1.2 解法二：哈希表 &amp;emsp; 利用哈希表，最直观的就是时间复杂度变低了。
 class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: hashset={} for i in range(len(nums)): if hashset." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
@@ -83,35 +83,35 @@ code.has-jax {
 
 
 <meta itemprop="name" content="1st">
-<meta itemprop="description" content="0. 写在前面  知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
-1.0 两数之和  给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
-1.1 解法一：暴力搜索  计算机永恒的神，暴力求解，来不及解释了，上代码！
-class Solution { public: vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) { vector&lt;int&gt; res = {0,0}; for(int i=0,j=0;i&lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } };  简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
-1.2 解法二：哈希表  利用哈希表，最直观的就是时间复杂度变低了。
+<meta itemprop="description" content="0. 写在前面 &emsp;知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
+1.0 两数之和 &emsp; 给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
+1.1 解法一：暴力搜索 &emsp; 计算机永恒的神，暴力求解，来不及解释了，上代码！
+class Solution { public: vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) { vector&lt;int&gt; res = {0,0}; for(int i=0,j=0;i&lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } }; &emsp; 简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
+1.2 解法二：哈希表 &emsp; 利用哈希表，最直观的就是时间复杂度变低了。
 class Solution: def twoSum(self, nums: List[int], target: int) -&gt; List[int]: hashset={} for i in range(len(nums)): if hashset."><meta itemprop="datePublished" content="2019-06-08T16:17:13+02:00" />
 <meta itemprop="dateModified" content="2019-06-08T16:17:13+02:00" />
-<meta itemprop="wordCount" content="76"><meta itemprop="image" content="https://codebug522.github.io/"/>
+<meta itemprop="wordCount" content="81"><meta itemprop="image" content="https://codebug522.github.io/"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://codebug522.github.io/"/>
 
 <meta name="twitter:title" content="1st"/>
-<meta name="twitter:description" content="0. 写在前面  知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
-1.0 两数之和  给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
-1.1 解法一：暴力搜索  计算机永恒的神，暴力求解，来不及解释了，上代码！
-class Solution { public: vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) { vector&lt;int&gt; res = {0,0}; for(int i=0,j=0;i&lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } };  简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
-1.2 解法二：哈希表  利用哈希表，最直观的就是时间复杂度变低了。
+<meta name="twitter:description" content="0. 写在前面 &emsp;知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
+1.0 两数之和 &emsp; 给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
+1.1 解法一：暴力搜索 &emsp; 计算机永恒的神，暴力求解，来不及解释了，上代码！
+class Solution { public: vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) { vector&lt;int&gt; res = {0,0}; for(int i=0,j=0;i&lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } }; &emsp; 简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
+1.2 解法二：哈希表 &emsp; 利用哈希表，最直观的就是时间复杂度变低了。
 class Solution: def twoSum(self, nums: List[int], target: int) -&gt; List[int]: hashset={} for i in range(len(nums)): if hashset."/>
 
 
 
 
     <meta property="og:title" content="1st" />
-<meta property="og:description" content="0. 写在前面  知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
-1.0 两数之和  给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
-1.1 解法一：暴力搜索  计算机永恒的神，暴力求解，来不及解释了，上代码！
-class Solution { public: vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) { vector&lt;int&gt; res = {0,0}; for(int i=0,j=0;i&lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } };  简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
-1.2 解法二：哈希表  利用哈希表，最直观的就是时间复杂度变低了。
+<meta property="og:description" content="0. 写在前面 &emsp;知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是LeetCode,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：力扣。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。
+1.0 两数之和 &emsp; 给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。
+1.1 解法一：暴力搜索 &emsp; 计算机永恒的神，暴力求解，来不及解释了，上代码！
+class Solution { public: vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) { vector&lt;int&gt; res = {0,0}; for(int i=0,j=0;i&lt;nums.size()-1;i&#43;&#43;) for(j = i&#43;1;j&lt;nums.size();j&#43;&#43;) { if(target == nums[i]&#43;nums[j]) { res[0] = i; res[1] = j; break; } } return res; } }; &emsp; 简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是$O(n^2)$，空间复杂度是$O(1)$。
+1.2 解法二：哈希表 &emsp; 利用哈希表，最直观的就是时间复杂度变低了。
 class Solution: def twoSum(self, nums: List[int], target: int) -&gt; List[int]: hashset={} for i in range(len(nums)): if hashset." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://codebug522.github.io/leetcode/1st/" /><meta property="og:image" content="https://codebug522.github.io/"/><meta property="article:section" content="leetcode" />
@@ -195,12 +195,19 @@ class Solution: def twoSum(self, nums: List[int], target: int) -&gt; List[int]: 
             
 
             <div class="post-content">
-                <h3 id="0-写在前面">0. 写在前面</h3>
-<p> 知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是<a href="https://www.leetcode.com">LeetCode</a>,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：<a href="www.leetcode-cn.com">力扣</a>。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。</p>
-<h4 id="10-两数之和">1.0 两数之和</h4>
-<p>  给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。</p>
-<h4 id="11-解法一暴力搜索">1.1 解法一：暴力搜索</h4>
-<p>  计算机永恒的神，暴力求解，来不及解释了，上代码！</p>
+                
+
+<h3 id="0-写在前面">0. 写在前面</h3>
+
+<p>&emsp;知道LeetCode的应该都知道这是LeetCode的“开山之作”，首先我们得知道什么是<a href="https://www.leetcode.com" target="_blank">LeetCode</a>,当然不出意外的是这样一个代码为王的网站，也有中文版且熟悉的谐音梗：<a href="www.leetcode-cn.com" target="_blank">力扣</a>。个人感觉LeetCode这个网站的主要作用和功能对我来说还是寻找一些有意义的题目并且看大神们如何讨论算法的高阶问题，毕竟以现在的能力来说解决高阶问题无论是代码能力还是算法能力都是不够的。</p>
+
+<h4 id="1-0-两数之和">1.0 两数之和</h4>
+
+<p>&emsp; 给定一个整数数组nums和一个目标值target，请在该数组中找出和为目标的那两个整数 ，并返回他们的数组下表。tips:可以假设没中输入只会对应一个答案，但是数组中的元素不能使用两遍。</p>
+
+<h4 id="1-1-解法一-暴力搜索">1.1 解法一：暴力搜索</h4>
+
+<p>&emsp; 计算机永恒的神，暴力求解，来不及解释了，上代码！</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
 public:
     vector<span style="color:#f92672">&lt;</span>int<span style="color:#f92672">&gt;</span> twoSum(vector<span style="color:#f92672">&lt;</span>int<span style="color:#f92672">&gt;&amp;</span> nums, int target) {
@@ -217,18 +224,20 @@ public:
             }
          <span style="color:#66d9ef">return</span> res;
     }
-};
-</code></pre></div><p>  简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是<code>$O(n^2)$</code>，空间复杂度是<code>$O(1)$</code>。</p>
-<h4 id="12-解法二哈希表">1.2 解法二：哈希表</h4>
-<p>  利用哈希表，最直观的就是时间复杂度变低了。</p>
+};</code></pre></div>
+<p>&emsp; 简单的逻辑，就是进行遍历，满足条件就输出！显而易见的是，暴力求解的算法的时间复杂度是<code>$O(n^2)$</code>，空间复杂度是<code>$O(1)$</code>。</p>
+
+<h4 id="1-2-解法二-哈希表">1.2 解法二：哈希表</h4>
+
+<p>&emsp; 利用哈希表，最直观的就是时间复杂度变低了。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> List[int]:
         hashset<span style="color:#f92672">=</span>{}
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(nums)):
             <span style="color:#66d9ef">if</span> hashset<span style="color:#f92672">.</span>get(target<span style="color:#f92672">-</span>nums[i]) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> :
                 <span style="color:#66d9ef">return</span> [hashset<span style="color:#f92672">.</span>get(target<span style="color:#f92672">-</span>nums[i]),i]
-            hashset[nums[i]]<span style="color:#f92672">=</span>i
-</code></pre></div><p>  遍历num[i]时，查看target-nums[i]是否在hash表中即可，此算法的时间复杂度和是<code>$O(n)$</code>，空间复杂度<code>$O(n)$</code>。解决这个问题的方法还是有很多的，比如有些大神提出的双指针查询等方法，这是个开始，希望能在这个社区感受到代码和算法的魅力。</p>
+            hashset[nums[i]]<span style="color:#f92672">=</span>i</code></pre></div>
+<p>&emsp; 遍历num[i]时，查看target-nums[i]是否在hash表中即可，此算法的时间复杂度和是<code>$O(n)$</code>，空间复杂度<code>$O(n)$</code>。解决这个问题的方法还是有很多的，比如有些大神提出的双指针查询等方法，这是个开始，希望能在这个社区感受到代码和算法的魅力。</p>
 
             </div>
         </article>

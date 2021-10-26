@@ -82,7 +82,7 @@ code.has-jax {
 <meta itemprop="description" content="0 First of all. HUGO is one of the most popular open-source statiic site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
 The most amazing thing about Hugo is its simplicity and convenience. Even if you are not a professional web developer, you can easily create your own web page based on Hugo. Of course, it is mainly aimed at engineering people with a certain computer foundation."><meta itemprop="datePublished" content="2020-01-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-01-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="318"><meta itemprop="image" content="https://codebug522.github.io/"/>
+<meta itemprop="wordCount" content="328"><meta itemprop="image" content="https://codebug522.github.io/"/>
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://codebug522.github.io/"/>
@@ -190,52 +190,73 @@ The most amazing thing about Hugo is its simplicity and convenience. Even if you
       
 
       <div class="post-content">
-        <h3 id="0-first-of-all">0 First of all.</h3>
-<p><a href="https://gohugo.io/" title="hugo">HUGO</a> is one of the most popular open-source statiic site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</p>
+        
+
+<h3 id="0-first-of-all">0 First of all.</h3>
+
+<p><a href="https://gohugo.io/" title="hugo" target="_blank">HUGO</a> is one of the most popular open-source statiic site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</p>
+
 <p>The most amazing thing about Hugo is its simplicity and convenience. Even if you are not a professional web developer, you can easily create your own web page based on Hugo. Of course, it is mainly aimed at engineering people with a certain computer foundation.</p>
+
 <p>If you are a professional developer or are already familiar with Hugo or can read the official documentation without pressure. Then you can skip this blog. The following is a very simple operation set of my own building. If you can&rsquo;t get any help from it, I am very sorry, because I only use it for recording and write a simple document for re-building if I encounter problems in the future.</p>
-<h3 id="1-howmost-in-command-line">1 How(Most in command-line).</h3>
+
+<h3 id="1-how-most-in-command-line">1 How(Most in command-line).</h3>
+
 <h5 id="tips-all-is-on-the-macos">Tips: All is on The MacOS</h5>
-<h4 id="11-install-and-new-site">1.1 Install and New Site.</h4>
+
+<h4 id="1-1-install-and-new-site">1.1 Install and New Site.</h4>
 <pre tabindex="0"><code>brew install hugo
 hugo new site MyBlog
-cd MyBlog
-</code></pre><h4 id="12-theme-and-config">1.2 Theme and Config.</h4>
-<pre tabindex="0"><code>git clone https://github.com/XXX/XXXX.git themes/theme-name
+cd MyBlog</code></pre>
+<h4 id="1-2-theme-and-config">1.2 Theme and Config.</h4>
+<pre tabindex="0"><code>git clone https://github.com/XXX/XXXX.git themes/theme-name</code></pre>
+<p>Just modifiy the config.toml and Attention.
++ baseurl = &lsquo;<code>https://username.github.io</code>&lsquo;
++ theme  = &lsquo;your_chosen_theme_name&rsquo;</p>
 
-</code></pre><p>Just modifiy the config.toml and Attention.</p>
-<ul>
-<li>baseurl = &lsquo;<code>https://username.github.io</code>&rsquo;</li>
-<li>theme  = &lsquo;your_chosen_theme_name&rsquo;</li>
-</ul>
-<h4 id="13-new-posts">1.3 New posts.</h4>
+<h4 id="1-3-new-posts">1.3 New posts.</h4>
+
 <p><code>hugo new ./content/posts/hugo.md</code></p>
+
 <p>When you finih your post, you should chage the &lsquo;draft&rsquo; from true to false. Otherwise you can not deploy your site.</p>
-<h4 id="14-deplpy-on-github">1.4 Deplpy on github.</h4>
-<h5 id="141-first-name">1.4.1 First name.</h5>
+
+<h4 id="1-4-deplpy-on-github">1.4 Deplpy on github.</h4>
+
+<h5 id="1-4-1-first-name">1.4.1 First name.</h5>
+
 <p>Create a new repositories named username.github.io.</p>
-<p>  <code>hugo</code></p>
-<p>  <code>cd public</code></p>
-<p>  <code>git init</code></p>
-<p>  <code>git add .</code></p>
-<p>  <code>git commit -m &quot;first commit&quot;</code></p>
-<p>  <code>git branch -M main</code></p>
-<p>  <code>git remote add origin git@github.com:username/userneme.github.io.git</code></p>
-<p>  <code>git push -u origin main</code></p>
+
+<p>&ensp; <code>hugo</code></p>
+
+<p>&ensp; <code>cd public</code></p>
+
+<p>&ensp; <code>git init</code></p>
+
+<p>&ensp; <code>git add .</code></p>
+
+<p>&ensp; <code>git commit -m &quot;first commit&quot;</code></p>
+
+<p>&ensp; <code>git branch -M main</code></p>
+
+<p>&ensp; <code>git remote add origin git@github.com:username/userneme.github.io.git</code></p>
+
+<p>&ensp; <code>git push -u origin main</code></p>
+
 <p>After then, you can see your own blog on <code>https://username.github.io&gt;</code>.</p>
-<h5 id="142-update">1.4.2 Update.</h5>
+
+<h5 id="1-4-2-update">1.4.2 Update.</h5>
+
 <p>In order to efficiently，we can write a shell file named deploy.sh.</p>
 <pre tabindex="0"><code>hugo 
 cd public 
 git add .
-msg=&quot;update the static site $(date)&quot;
-if [ -n &quot;$*&quot; ]; then
-msg=&quot;$*&quot;
+msg=&#34;update the static site $(date)&#34;
+if [ -n &#34;$*&#34; ]; then
+msg=&#34;$*&#34;
 fi
-git commit -m &quot;$msg&quot;
-git push orign main
-
-</code></pre><p>Of course, the deply.sh should be given authority.
+git commit -m &#34;$msg&#34;
+git push orign main</code></pre>
+<p>Of course, the deply.sh should be given authority.
 <code>chmod +x deploy.sh</code>
 And then,
 <code>./deploy.sh</code></p>
@@ -257,7 +278,7 @@ And then,
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        318 Words
+        328 Words
       </p>
 
       <p>
