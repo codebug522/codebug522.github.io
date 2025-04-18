@@ -1,35 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog.coolapso.sh</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on blog.coolapso.sh</description>
+    <title>Publications on blog.coolapso.sh</title>
+    <link>http://localhost:1313/publications/</link>
+    <description>Recent content in Publications on blog.coolapso.sh</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 18 Apr 2025 11:20:09 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Your Post Title</title>
-      <link>http://localhost:1313/cv/ggcd1/</link>
-      <pubDate>Fri, 18 Apr 2025 11:20:09 +0200</pubDate>
-      <guid>http://localhost:1313/cv/ggcd1/</guid>
-      <description>&lt;p&gt;shenemshide bshidd&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Your Post Title</title>
-      <link>http://localhost:1313/leetcode/ggcd2/</link>
-      <pubDate>Fri, 18 Apr 2025 11:20:09 +0200</pubDate>
-      <guid>http://localhost:1313/leetcode/ggcd2/</guid>
-      <description>&lt;p&gt;shenemshide bshidd&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Your Post Title</title>
-      <link>http://localhost:1313/posts/ggcd3/</link>
-      <pubDate>Fri, 18 Apr 2025 11:20:09 +0200</pubDate>
-      <guid>http://localhost:1313/posts/ggcd3/</guid>
-      <description>&lt;p&gt;shenemshide bshidd&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sat, 18 May 2024 11:20:09 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuous-time Quantum Walk on Graph</title>
       <link>http://localhost:1313/files/CTQW(ICANN).pdf</link>
