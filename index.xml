@@ -32,24 +32,24 @@
     </item>
     <item>
       <title>Continuous-time Quantum Walk on Graph</title>
-      <link>http://localhost:1313/files/CTQW(ICANN).pdf</link>
+      <link>http://localhost:1313/publications/ctqw/</link>
       <pubDate>Sat, 18 May 2024 11:20:09 +0200</pubDate>
-      <guid>http://localhost:1313/files/CTQW(ICANN).pdf</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <guid>http://localhost:1313/publications/ctqw/</guid>
+      <description>&lt;h3 id=&#34;paperfilesctqwpdf&#34;&gt;&lt;a href=&#34;http://localhost:1313/files/ctqw.pdf&#34;&gt;Paper&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
     <item>
       <title>Quantum-Classical Hybrid Neural Network for Yield Prediction</title>
-      <link>http://localhost:1313/files/QHDC(IJCNN).pdf</link>
+      <link>http://localhost:1313/publications/yieldprediction/</link>
       <pubDate>Tue, 23 Jan 2024 11:20:09 +0200</pubDate>
-      <guid>http://localhost:1313/files/QHDC(IJCNN).pdf</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <guid>http://localhost:1313/publications/yieldprediction/</guid>
+      <description>&lt;h3 id=&#34;paperfilesqsannpdf&#34;&gt;&lt;a href=&#34;http://localhost:1313/files/QSANN.pdf&#34;&gt;paper&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
     <item>
-      <title>Quantum Shadow Learning For Cropland Classfication</title>
-      <link>http://localhost:1313/files/Cropland_classification.pdf</link>
+      <title>Quantum Shadow Learning For Cropland Classification</title>
+      <link>http://localhost:1313/publications/croplandclassification/</link>
       <pubDate>Wed, 18 Jan 2023 14:20:09 +0200</pubDate>
-      <guid>http://localhost:1313/files/Cropland_classification.pdf</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+      <guid>http://localhost:1313/publications/croplandclassification/</guid>
+      <description>&lt;h3 id=&#34;quantum-shadow-learning-for-cropland-classificationfilescropland_classificationpdf&#34;&gt;&lt;a href=&#34;http://localhost:1313/files/cropland_classification.pdf&#34;&gt;Quantum Shadow Learning For Cropland Classification&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
   </channel>
 </rss>
