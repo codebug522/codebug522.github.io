@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on codebug522</title>
+    <link>https://codebug522.github.io/publications/</link>
+    <description>Recent content in Publications on codebug522</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Apr 2025 14:20:09 +0200</lastBuildDate>
+    <atom:link href="https://codebug522.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QeHDC: Hyperdimensional Computing based on Quantum-enhanced binding and SuperClass Construction (To NeurIPS)</title>
+      <link>https://codebug522.github.io/publications/qehdc/</link>
+      <pubDate>Fri, 18 Apr 2025 14:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/qehdc/</guid>
+      <description>&lt;p&gt;QeHDC has already submitted to NeurIPS2025&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum-StateHD: Leveraging Random Quantum States for Hyperdimensional Computing (IJCNN)</title>
+      <link>https://codebug522.github.io/publications/quantumhyperdimensionalcomputing/</link>
+      <pubDate>Mon, 31 Mar 2025 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/quantumhyperdimensionalcomputing/</guid>
+      <description>&lt;h3 id=&#34;paperfilesqhdcpdf&#34;&gt;&lt;a href=&#34;https://codebug522.github.io/files/QHDC.pdf&#34;&gt;paper&lt;/a&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>Continuous-time Quantum Walk on Graph (ICANN)</title>
+      <link>https://codebug522.github.io/publications/ctqw/</link>
+      <pubDate>Sat, 18 May 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/ctqw/</guid>
+      <description>&lt;h2 id=&#34;continuous-time-quantum-walk-on-graphfilesctqwpdf&#34;&gt;&lt;a href=&#34;https://codebug522.github.io/files/ctqw.pdf&#34;&gt;Continuous-time Quantum Walk on Graph&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>Quantum-Classical Hybrid Neural Network for Yield Prediction (to ICONIP2025)</title>
+      <link>https://codebug522.github.io/publications/yieldprediction/</link>
+      <pubDate>Tue, 23 Jan 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/yieldprediction/</guid>
+      <description>&lt;h3 id=&#34;paper-is-on-the-way&#34;&gt;paper is on the way&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Shadow Learning For Cropland Classification (ICMI)</title>
+      <link>https://codebug522.github.io/publications/croplandclassification/</link>
+      <pubDate>Wed, 18 Jan 2023 14:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/croplandclassification/</guid>
+      <description>&lt;h3 id=&#34;quantum-shadow-learning-for-cropland-classificationfilescropland_classificationpdf&#34;&gt;&lt;a href=&#34;https://codebug522.github.io/files/cropland_classification.pdf&#34;&gt;Quantum Shadow Learning For Cropland Classification&lt;/a&gt;&lt;/h3&gt;</description>
+    </item>
+  </channel>
+</rss>

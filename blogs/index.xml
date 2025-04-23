@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on codebug522</title>
+    <link>https://codebug522.github.io/blogs/</link>
+    <description>Recent content in Blogs on codebug522</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 18 Feb 2024 11:20:09 +0200</lastBuildDate>
+    <atom:link href="https://codebug522.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Quantum Machine Learning</title>
+      <link>https://codebug522.github.io/blogs/introduction/</link>
+      <pubDate>Sun, 18 Feb 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/blogs/introduction/</guid>
+      <description>&lt;p&gt;⚛️ Quantum Machine Learning (QML) is where the surreal beauty of quantum physics meets the power of artificial intelligence.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-quantum-machine-learning&#34;&gt;What is Quantum Machine Learning?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quantum Machine Learning (QML)&lt;/strong&gt; is an emerging interdisciplinary field that combines quantum computing with machine learning techniques. It aims to explore:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;“Can quantum computers accelerate or enhance the capabilities of traditional machine learning models?”&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Key ideas behind QML include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Encoding classical data into quantum states&lt;/li&gt;&#xA;&lt;li&gt;Designing trainable quantum circuits&lt;/li&gt;&#xA;&lt;li&gt;Using hybrid quantum-classical training loops&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-does-qml-matter&#34;&gt;Why Does QML Matter?&lt;/h2&gt;&#xA;&lt;p&gt;Quantum computers offer &lt;strong&gt;exponential parallelism&lt;/strong&gt; in certain scenarios. Potential benefits of QML include:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A String Unplayed, A Bloom Uncounted</title>
+      <link>https://codebug522.github.io/blogs/story/</link>
+      <pubDate>Sun, 18 Feb 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/blogs/story/</guid>
+      <description>&lt;h2 id=&#34;原文&#34;&gt;原文&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;一弦量子未坍，&lt;br&gt;&#xA;半纸叠加难书，&lt;br&gt;&#xA;不测心，&lt;br&gt;&#xA;叹纠缠几度。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;english-translation&#34;&gt;English Translation&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;del&gt;A quantum string yet uncollapsed,&lt;br&gt;&#xA;Half a page of superposition too tangled to write.&lt;br&gt;&#xA;The heart unmeasured—how many times must entanglement sigh?&lt;/del&gt;&lt;br&gt;&#xA;Love and fucking Love&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- ## ✍️ Notes&#xA;&#xA;This line captures the ache of untold emotions and the quiet passage of time. The metaphor of a string instrument and falling flowers evokes both stillness and impermanence—like quantum states collapsing before they&#39;re known. --&gt;&#xA;&lt;!-- ## 📎 Related&#xA;&#xA;- [Reflections on Impermanence](/posts/impermanence-in-classical-poetry)&#xA;- [Quantum Memory and Forgotten Time](/posts/quantum-memory) --&gt;</description>
+    </item>
+  </channel>
+</rss>

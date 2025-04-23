@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leetcodes on codebug522</title>
+    <link>https://codebug522.github.io/leetcode/</link>
+    <description>Recent content in Leetcodes on codebug522</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://codebug522.github.io/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode Solution: N-Queens</title>
+      <link>https://codebug522.github.io/leetcode/n-queens/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://codebug522.github.io/leetcode/n-queens/</guid>
+      <description>&lt;h2 id=&#34;-problem-n-queens&#34;&gt;👑 Problem: N-Queens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&#xA;The N-Queens puzzle is the problem of placing &lt;code&gt;n&lt;/code&gt; queens on an &lt;code&gt;n x n&lt;/code&gt; chessboard such that no two queens attack each other. Return all distinct solutions to the N-Queens puzzle.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Input: n = 4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Output: [[&amp;#34;.Q..&amp;#34;,&amp;#34;...Q&amp;#34;,&amp;#34;Q...&amp;#34;,&amp;#34;..Q.&amp;#34;]]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-algorithm-explanation&#34;&gt;🧠 Algorithm Explanation&lt;/h2&gt;&#xA;&lt;p&gt;This is a classic &lt;strong&gt;backtracking problem&lt;/strong&gt;, which we solve using an &lt;strong&gt;explicit stack&lt;/strong&gt; to avoid recursive or nested functions.&#xA;Each item on the stack holds:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode Solution: Word Ladder</title>
+      <link>https://codebug522.github.io/leetcode/word-ladder/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://codebug522.github.io/leetcode/word-ladder/</guid>
+      <description>&lt;h2 id=&#34;-problem-word-ladder&#34;&gt;🧩 Problem: Word Ladder&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&#xA;Given two words, &lt;code&gt;beginWord&lt;/code&gt; and &lt;code&gt;endWord&lt;/code&gt;, and a dictionary word list, return the length of the shortest transformation sequence from &lt;code&gt;beginWord&lt;/code&gt; to &lt;code&gt;endWord&lt;/code&gt;, such that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Only one letter can be changed at a time.&lt;/li&gt;&#xA;&lt;li&gt;Each transformed word must exist in the word list.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Input: beginWord = &amp;#34;hit&amp;#34;, endWord = &amp;#34;cog&amp;#34;, wordList = [&amp;#34;hot&amp;#34;,&amp;#34;dot&amp;#34;,&amp;#34;dog&amp;#34;,&amp;#34;lot&amp;#34;,&amp;#34;log&amp;#34;,&amp;#34;cog&amp;#34;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Output: 5  # &amp;#34;hit&amp;#34; -&amp;gt; &amp;#34;hot&amp;#34; -&amp;gt; &amp;#34;dot&amp;#34; -&amp;gt; &amp;#34;dog&amp;#34; -&amp;gt; &amp;#34;cog&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-algorithm-explanation&#34;&gt;🧠 Algorithm Explanation&lt;/h2&gt;&#xA;&lt;p&gt;This is a shortest-path problem in an unweighted graph.&#xA;Each word is a node, and there is an edge between two words if they differ by one letter.&#xA;We use &lt;strong&gt;Breadth-First Search (BFS)&lt;/strong&gt; from &lt;code&gt;beginWord&lt;/code&gt; to find the shortest path to &lt;code&gt;endWord&lt;/code&gt;.&#xA;To speed up, we precompute generic patterns like &lt;code&gt;h*t&lt;/code&gt;, &lt;code&gt;ho*&lt;/code&gt; etc. to represent transformations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode Solution: Trapping Rain Water</title>
+      <link>https://codebug522.github.io/leetcode/trapping-rain-water/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://codebug522.github.io/leetcode/trapping-rain-water/</guid>
+      <description>&lt;h2 id=&#34;-problem-trapping-rain-water&#34;&gt;💧 Problem: Trapping Rain Water&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&#xA;Given &lt;code&gt;n&lt;/code&gt; non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Output: 6&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-algorithm-explanation&#34;&gt;🧠 Algorithm Explanation&lt;/h2&gt;&#xA;&lt;p&gt;To calculate trapped water at every index &lt;code&gt;i&lt;/code&gt;, we need to find:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The maximum height on the left of &lt;code&gt;i&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;The maximum height on the right of &lt;code&gt;i&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Water trapped at &lt;code&gt;i&lt;/code&gt; = &lt;code&gt;min(left_max, right_max) - height[i]&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To improve efficiency:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

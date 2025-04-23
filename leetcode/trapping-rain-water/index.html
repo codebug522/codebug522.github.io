@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="|U&gt;">
+<meta name="description" content="💧 Problem: Trapping Rain Water Description: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+Example:
+Input: height = [0,1,0,2,1,0,1,3,2,1,2,1] Output: 6 🧠 Algorithm Explanation To calculate trapped water at every index i, we need to find:
+The maximum height on the left of i The maximum height on the right of i Water trapped at i = min(left_max, right_max) - height[i] To improve efficiency:
+" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://codebug522.github.io/leetcode/trapping-rain-water/" />
+
+
+    <title>
+        
+            LeetCode Solution: Trapping Rain Water :: codebug522 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.182359b7ed7423e4e3e871ffd1e8ca02b913355862b67bafd31359e30812a5ea.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+
+
+
+
+<link href="/static/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+
+<link href="/static/fontawesome/css/all.min.css" rel="stylesheet" />
+ 
+
+ 
+<link href="/static/fontawesome/css/brands.min.css" rel="stylesheet" />
+ 
+
+
+<link href="/static/fontawesome/css/solid.min.css" rel="stylesheet" />
+ 
+
+ 
+<link href="/static/fontawesome/css/regular.min.css" rel="stylesheet" />
+
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="LeetCode Solution: Trapping Rain Water">
+  <meta itemprop="description" content="💧 Problem: Trapping Rain Water Description: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+Example:
+Input: height = [0,1,0,2,1,0,1,3,2,1,2,1] Output: 6 🧠 Algorithm Explanation To calculate trapped water at every index i, we need to find:
+The maximum height on the left of i The maximum height on the right of i Water trapped at i = min(left_max, right_max) - height[i] To improve efficiency:">
+  <meta itemprop="datePublished" content="2021-05-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-05-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="179">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="LeetCode Solution: Trapping Rain Water">
+  <meta name="twitter:description" content="💧 Problem: Trapping Rain Water Description: Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+Example:
+Input: height = [0,1,0,2,1,0,1,3,2,1,2,1] Output: 6 🧠 Algorithm Explanation To calculate trapped water at every index i, we need to find:
+The maximum height on the left of i The maximum height on the right of i Water trapped at i = min(left_max, right_max) - height[i] To improve efficiency:">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-05-10 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">QXU</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#ffffff;
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner">
+            
+            <div class="submenu">
+                <li class="dropdown">
+                    <a href="/publications">
+                        |0&gt;
+                    </a>
+                </li>
+            </div>
+            
+        
+            
+            <div class="submenu">
+                <li class="dropdown">
+                    <a href="/leetcode">
+                        |1&gt;
+                    </a>
+                </li>
+            </div>
+            
+        
+            
+            <div class="submenu">
+                <li class="dropdown">
+                    <a href="/blogs">
+                        |&#43;&gt;
+                    </a>
+                </li>
+            </div>
+            
+        
+            
+            <div class="submenu">
+                <li class="dropdown">
+                    <a href="/files/yangjiexu_cv.pdf">
+                        About Me
+                    </a>
+                </li>
+            </div>
+            
+        
+
+    
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            
+                <h2 class="post-title"><a href="https://codebug522.github.io/leetcode/trapping-rain-water/">LeetCode Solution: Trapping Rain Water</a></h2>
+            
+
+
+            
+            
+            
+
+            <div class="post-content">
+                <h2 id="-problem-trapping-rain-water">💧 Problem: Trapping Rain Water</h2>
+<p><strong>Description:</strong>
+Given <code>n</code> non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
+</span></span><span style="display:flex;"><span>Output: 6
+</span></span></code></pre></div><h2 id="-algorithm-explanation">🧠 Algorithm Explanation</h2>
+<p>To calculate trapped water at every index <code>i</code>, we need to find:</p>
+<ul>
+<li>The maximum height on the left of <code>i</code></li>
+<li>The maximum height on the right of <code>i</code></li>
+<li>Water trapped at <code>i</code> = <code>min(left_max, right_max) - height[i]</code></li>
+</ul>
+<p>To improve efficiency:</p>
+<ul>
+<li>We precompute two arrays <code>left_max[i]</code> and <code>right_max[i]</code></li>
+<li>Traverse once to build them, then another pass to compute trapped water</li>
+</ul>
+<h2 id="-python-code">🐍 Python Code</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">trap</span>(height):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> height:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    n <span style="color:#f92672">=</span> len(height)
+</span></span><span style="display:flex;"><span>    left_max <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> n
+</span></span><span style="display:flex;"><span>    right_max <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> n
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    left_max[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> height[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n):
+</span></span><span style="display:flex;"><span>        left_max[i] <span style="color:#f92672">=</span> max(left_max[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>], height[i])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    right_max[n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> height[n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>        right_max[i] <span style="color:#f92672">=</span> max(right_max[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>], height[i])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+</span></span><span style="display:flex;"><span>        total <span style="color:#f92672">+=</span> min(left_max[i], right_max[i]) <span style="color:#f92672">-</span> height[i]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> total
+</span></span></code></pre></div><h2 id="-complexity">✅ Complexity</h2>
+<ul>
+<li>Time: O(n)</li>
+<li>Space: O(n)</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+        <div class="footer__inner">
+            <ul class="icons">
+                    
+        <li><a href="https://github.com/codebug522" class="icon fa-brands fa-github" target="_blank" rel="noopener" title="Github"></a></li>
+    
+        <li><a href="https://www.instagram.com/code_bug/?next=%2F" class="icon fa-brands fa-instagram" target="_blank" rel="noopener" title="Instagram"></a></li>
+    
+                
+            </ul>
+        </div>
+    
+    
+        <div class="footer__inner">
+            <div class="footer__content">
+            
+            
+        </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.efa6b6352b1e4d712533d2fbd29f0c899eb1474e0f181433c934e6c6fdd3678ff834c116423c957d7a6ff6763e9c0d599a82208cdeae81c4a483e37853c46360.js" integrity="sha512-76a2NSseTXElM9L70p8MiZ6xR04PGBQzyTTmxv3TZ4/4NMEWQjyVfXpv9nY&#43;nA1ZmoIgjN6ugcSkg&#43;N4U8RjYA=="></script>
+
+
+
+    </body>
+</html>

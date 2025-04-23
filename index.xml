@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>|ψ⟩ Welcome to My Quantum Blog on codebug522</title>
+    <link>https://codebug522.github.io/</link>
+    <description>Recent content in |ψ⟩ Welcome to My Quantum Blog on codebug522</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Apr 2025 14:20:09 +0200</lastBuildDate>
+    <atom:link href="https://codebug522.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QeHDC: Hyperdimensional Computing based on Quantum-enhanced binding and SuperClass Construction (To NeurIPS)</title>
+      <link>https://codebug522.github.io/publications/qehdc/</link>
+      <pubDate>Fri, 18 Apr 2025 14:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/qehdc/</guid>
+      <description>&lt;p&gt;QeHDC has already submitted to NeurIPS2025&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum-StateHD: Leveraging Random Quantum States for Hyperdimensional Computing (IJCNN)</title>
+      <link>https://codebug522.github.io/publications/quantumhyperdimensionalcomputing/</link>
+      <pubDate>Mon, 31 Mar 2025 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/quantumhyperdimensionalcomputing/</guid>
+      <description>&lt;h3 id=&#34;paperfilesqhdcpdf&#34;&gt;&lt;a href=&#34;https://codebug522.github.io/files/QHDC.pdf&#34;&gt;paper&lt;/a&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>Continuous-time Quantum Walk on Graph (ICANN)</title>
+      <link>https://codebug522.github.io/publications/ctqw/</link>
+      <pubDate>Sat, 18 May 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/ctqw/</guid>
+      <description>&lt;h2 id=&#34;continuous-time-quantum-walk-on-graphfilesctqwpdf&#34;&gt;&lt;a href=&#34;https://codebug522.github.io/files/ctqw.pdf&#34;&gt;Continuous-time Quantum Walk on Graph&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title> Quantum Machine Learning</title>
+      <link>https://codebug522.github.io/blogs/introduction/</link>
+      <pubDate>Sun, 18 Feb 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/blogs/introduction/</guid>
+      <description>&lt;p&gt;⚛️ Quantum Machine Learning (QML) is where the surreal beauty of quantum physics meets the power of artificial intelligence.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-quantum-machine-learning&#34;&gt;What is Quantum Machine Learning?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quantum Machine Learning (QML)&lt;/strong&gt; is an emerging interdisciplinary field that combines quantum computing with machine learning techniques. It aims to explore:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;“Can quantum computers accelerate or enhance the capabilities of traditional machine learning models?”&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Key ideas behind QML include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Encoding classical data into quantum states&lt;/li&gt;&#xA;&lt;li&gt;Designing trainable quantum circuits&lt;/li&gt;&#xA;&lt;li&gt;Using hybrid quantum-classical training loops&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-does-qml-matter&#34;&gt;Why Does QML Matter?&lt;/h2&gt;&#xA;&lt;p&gt;Quantum computers offer &lt;strong&gt;exponential parallelism&lt;/strong&gt; in certain scenarios. Potential benefits of QML include:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A String Unplayed, A Bloom Uncounted</title>
+      <link>https://codebug522.github.io/blogs/story/</link>
+      <pubDate>Sun, 18 Feb 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/blogs/story/</guid>
+      <description>&lt;h2 id=&#34;原文&#34;&gt;原文&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;一弦量子未坍，&lt;br&gt;&#xA;半纸叠加难书，&lt;br&gt;&#xA;不测心，&lt;br&gt;&#xA;叹纠缠几度。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;english-translation&#34;&gt;English Translation&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;del&gt;A quantum string yet uncollapsed,&lt;br&gt;&#xA;Half a page of superposition too tangled to write.&lt;br&gt;&#xA;The heart unmeasured—how many times must entanglement sigh?&lt;/del&gt;&lt;br&gt;&#xA;Love and fucking Love&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- ## ✍️ Notes&#xA;&#xA;This line captures the ache of untold emotions and the quiet passage of time. The metaphor of a string instrument and falling flowers evokes both stillness and impermanence—like quantum states collapsing before they&#39;re known. --&gt;&#xA;&lt;!-- ## 📎 Related&#xA;&#xA;- [Reflections on Impermanence](/posts/impermanence-in-classical-poetry)&#xA;- [Quantum Memory and Forgotten Time](/posts/quantum-memory) --&gt;</description>
+    </item>
+    <item>
+      <title>Quantum-Classical Hybrid Neural Network for Yield Prediction (to ICONIP2025)</title>
+      <link>https://codebug522.github.io/publications/yieldprediction/</link>
+      <pubDate>Tue, 23 Jan 2024 11:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/yieldprediction/</guid>
+      <description>&lt;h3 id=&#34;paper-is-on-the-way&#34;&gt;paper is on the way&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode Solution: N-Queens</title>
+      <link>https://codebug522.github.io/leetcode/n-queens/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://codebug522.github.io/leetcode/n-queens/</guid>
+      <description>&lt;h2 id=&#34;-problem-n-queens&#34;&gt;👑 Problem: N-Queens&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&#xA;The N-Queens puzzle is the problem of placing &lt;code&gt;n&lt;/code&gt; queens on an &lt;code&gt;n x n&lt;/code&gt; chessboard such that no two queens attack each other. Return all distinct solutions to the N-Queens puzzle.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Input: n = 4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Output: [[&amp;#34;.Q..&amp;#34;,&amp;#34;...Q&amp;#34;,&amp;#34;Q...&amp;#34;,&amp;#34;..Q.&amp;#34;]]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-algorithm-explanation&#34;&gt;🧠 Algorithm Explanation&lt;/h2&gt;&#xA;&lt;p&gt;This is a classic &lt;strong&gt;backtracking problem&lt;/strong&gt;, which we solve using an &lt;strong&gt;explicit stack&lt;/strong&gt; to avoid recursive or nested functions.&#xA;Each item on the stack holds:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Shadow Learning For Cropland Classification (ICMI)</title>
+      <link>https://codebug522.github.io/publications/croplandclassification/</link>
+      <pubDate>Wed, 18 Jan 2023 14:20:09 +0200</pubDate>
+      <guid>https://codebug522.github.io/publications/croplandclassification/</guid>
+      <description>&lt;h3 id=&#34;quantum-shadow-learning-for-cropland-classificationfilescropland_classificationpdf&#34;&gt;&lt;a href=&#34;https://codebug522.github.io/files/cropland_classification.pdf&#34;&gt;Quantum Shadow Learning For Cropland Classification&lt;/a&gt;&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode Solution: Word Ladder</title>
+      <link>https://codebug522.github.io/leetcode/word-ladder/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://codebug522.github.io/leetcode/word-ladder/</guid>
+      <description>&lt;h2 id=&#34;-problem-word-ladder&#34;&gt;🧩 Problem: Word Ladder&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&#xA;Given two words, &lt;code&gt;beginWord&lt;/code&gt; and &lt;code&gt;endWord&lt;/code&gt;, and a dictionary word list, return the length of the shortest transformation sequence from &lt;code&gt;beginWord&lt;/code&gt; to &lt;code&gt;endWord&lt;/code&gt;, such that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Only one letter can be changed at a time.&lt;/li&gt;&#xA;&lt;li&gt;Each transformed word must exist in the word list.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Input: beginWord = &amp;#34;hit&amp;#34;, endWord = &amp;#34;cog&amp;#34;, wordList = [&amp;#34;hot&amp;#34;,&amp;#34;dot&amp;#34;,&amp;#34;dog&amp;#34;,&amp;#34;lot&amp;#34;,&amp;#34;log&amp;#34;,&amp;#34;cog&amp;#34;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Output: 5  # &amp;#34;hit&amp;#34; -&amp;gt; &amp;#34;hot&amp;#34; -&amp;gt; &amp;#34;dot&amp;#34; -&amp;gt; &amp;#34;dog&amp;#34; -&amp;gt; &amp;#34;cog&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-algorithm-explanation&#34;&gt;🧠 Algorithm Explanation&lt;/h2&gt;&#xA;&lt;p&gt;This is a shortest-path problem in an unweighted graph.&#xA;Each word is a node, and there is an edge between two words if they differ by one letter.&#xA;We use &lt;strong&gt;Breadth-First Search (BFS)&lt;/strong&gt; from &lt;code&gt;beginWord&lt;/code&gt; to find the shortest path to &lt;code&gt;endWord&lt;/code&gt;.&#xA;To speed up, we precompute generic patterns like &lt;code&gt;h*t&lt;/code&gt;, &lt;code&gt;ho*&lt;/code&gt; etc. to represent transformations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode Solution: Trapping Rain Water</title>
+      <link>https://codebug522.github.io/leetcode/trapping-rain-water/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://codebug522.github.io/leetcode/trapping-rain-water/</guid>
+      <description>&lt;h2 id=&#34;-problem-trapping-rain-water&#34;&gt;💧 Problem: Trapping Rain Water&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;&#xA;Given &lt;code&gt;n&lt;/code&gt; non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Output: 6&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-algorithm-explanation&#34;&gt;🧠 Algorithm Explanation&lt;/h2&gt;&#xA;&lt;p&gt;To calculate trapped water at every index &lt;code&gt;i&lt;/code&gt;, we need to find:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The maximum height on the left of &lt;code&gt;i&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;The maximum height on the right of &lt;code&gt;i&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Water trapped at &lt;code&gt;i&lt;/code&gt; = &lt;code&gt;min(left_max, right_max) - height[i]&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To improve efficiency:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
